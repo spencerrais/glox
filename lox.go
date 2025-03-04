@@ -29,6 +29,7 @@ func runFile(path string) {
 	run(string(bytes))
 }
 
+// runs a REPL
 func runPrompt() {
 	reader := bufio.NewReader(os.Stdin)
 	for {
