@@ -30,7 +30,7 @@ func runFile(path string) {
 	run(string(bytes))
 }
 
-// runs a REPL
+// runs a REPL line by line
 func runPrompt() {
 	reader := bufio.NewReader(os.Stdin)
 	for {
