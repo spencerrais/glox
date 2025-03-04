@@ -20,6 +20,7 @@ func main() {
 	}
 }
 
+// run a lox file
 func runFile(path string) {
 	bytes, err := os.ReadFile(path)
 	if err != nil {
