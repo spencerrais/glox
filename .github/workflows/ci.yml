@@ -26,12 +26,11 @@ jobs:
       - name: Install dependencies
         run: go mod tidy
 
-      ### UNTIL THIS IS IN A WORKING STATE CANNOT BUILD
 
       # Check if the project compiles - not needed if simple package with test coverage
-      # - name: Check compilation
-      #   run: go build -v ./...
-      #
+      - name: Check compilation
+        run: go build -v ./...
+
       # # Run unit tests
       # - name: Run unit tests
       #   run: go test ./... -v
